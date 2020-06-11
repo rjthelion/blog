@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../../theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="../../theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="../../theme/font-awesome/css/font-awesome.min.css">
+
+
+
+
+    <link rel="shortcut icon" href="https://rjdeleon.netlify.appcontent/extra/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://rjdeleon.netlify.appcontent/extra/favicon.ico" type="image/x-icon">
+
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#333">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#333">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#333">
+
+    <meta name="author" content="Renz De Leon" />
+    <meta name="description" content="Non-sensical projects that wont be published" />
+<meta property="og:site_name" content="Renz's Blog"/>
+<meta property="og:type" content="blog"/>
+<meta property="og:title" content="Renz's Blog"/>
+<meta property="og:description" content="Non-sensical projects that wont be published"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="../.."/>
+<meta property="og:image" content="https://rjdeleon.netlify.appcontent/img/Picture_of_me.jpg">
+
+  <title>Renz's Blog &ndash; Category blogging</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="../..">
+        <img src="https://rjdeleon.netlify.appcontent/img/Picture_of_me.jpg" alt="Renz De Leon" title="Renz De Leon">
+      </a>
+      <h1><a href="../..">Renz De Leon</a></h1>
+
+<p>Clumsy Multitasker</p>
+      <nav>
+        <ul class="list">
+          <li><a href="../../pages/about-me/#about-me">About Me</a></li>
+          <li><a href="../../pages/blogging/#blogging">Blogging</a></li>
+
+          <li><a href="https://docs.getpelican.com/en/stable/" target="_blank">pelican</a></li>
+          <li><a href="https://github.com/getpelican/pelican-themes/tree/master/Flex" target="_blank">Flex</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-Instagram" href="https://www.instagram.com/rensdl" target="_blank"><i class="fa fa-Instagram"></i></a></li>
+        <li><a class="sc-Github" href="https://github.com/rjthelion" target="_blank"><i class="fa fa-Github"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+
+
+
+<article>
+  <header>
+    <h2><a href="../../articles/2020/06/05/guild-wars-2-the-experience-so-far/#guild-wars-2-the-experience-so-far">Guild Wars 2 "The Experience so far"</a></h2>
+    <p>
+      Posted on Fri 05 June 2020 in <a href="../../category/blogging">blogging</a>
+
+          &#8226; Tagged with
+              <a href="../../tag/gaming">gaming</a>
+    </p>
+  </header>
+  <div>
+      <p>Guild wars 2 is one of those MMOs that have a great standing in its field and it shows regardless if its a game from 2013, the technology and ideas that come from it ages well. It is a breath of fresh air after struggling to find a decent MMO …</p>
+      <br>
+      <a class="btn" href="../../articles/2020/06/05/guild-wars-2-the-experience-so-far/#guild-wars-2-the-experience-so-far">Continue reading</a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="../../articles/2020/06/03/installing-pelican/#installing-pelican">Installing Pelican</a></h2>
+    <p>
+      Posted on Wed 03 June 2020 in <a href="../../category/blogging">blogging</a>
+
+          &#8226; Tagged with
+              <a href="../../tag/pelican">Pelican</a>
+    </p>
+  </header>
+  <div>
+      <p>Pelican is a static site generator</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">do_twice</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">wrapper_do_twice</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="k">return</span> <span class="n">wrapper_do_twice</span>
+
+<span class="nd">@do_twice</span>
+<span class="k">def</span> <span class="nf">say_whee</span><span class="p">(</span><span class="n">some_text</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">some_text</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;Whee!&#39;</span>
+<span class="n">say_whee</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+
+<p><a href="https://blog.getpelican.com">Pelican</a></p>
+      <br>
+      <a class="btn" href="../../articles/2020/06/03/installing-pelican/#installing-pelican">Continue reading</a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="../../articles/2020/05/19/mmorpgs/#mmorpgs">MMORPGs</a></h2>
+    <p>
+      Posted on Tue 19 May 2020 in <a href="../../category/blogging">blogging</a>
+
+          &#8226; Tagged with
+              <a href="../../tag/gaming">gaming</a>
+    </p>
+  </header>
+  <div>
+      <p>Massively Multiplayer Online Games or MMORPGs ring a special tune to me in which brings out my childhood memories of waking up early just to login into my game and get a head start. Each level, gear and new zone hits my dopamine levels like a crack addict. There's just …</p>
+      <br>
+      <a class="btn" href="../../articles/2020/05/19/mmorpgs/#mmorpgs">Continue reading</a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="../../articles/2020/05/18/markdown-examples-part-1/#markdown-examples-part-1">Markdown Examples Part 1</a></h2>
+    <p>
+      Posted on Mon 18 May 2020 in <a href="../../category/blogging">blogging</a>
+
+          &#8226; Tagged with
+              <a href="../../tag/markdown">markdown</a>
+    </p>
+  </header>
+  <div>
+      <p>Basic markdown examples are shown below</p>
+<p>This text is <strong>bold</strong>
+This text is also <strong>bold</strong></p>
+<p>This text is <em>italic</em>
+This text is also <em>italic</em></p>
+<p>This text is <strong><em>italic and bold</em></strong></p>
+<h1>An h1 heading</h1>
+<h2>An h2 heading</h2>
+<h3>An h3 heading...</h3>
+<h6>An h6 heading</h6>
+<p>A list with numbers:
+1. One
+2. Two …</p>
+      <br>
+      <a class="btn" href="../../articles/2020/05/18/markdown-examples-part-1/#markdown-examples-part-1">Continue reading</a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="../../articles/2020/05/18/markdown-examples-part-2/#markdown-examples-part-2">Markdown Examples Part 2</a></h2>
+    <p>
+      Posted on Mon 18 May 2020 in <a href="../../category/blogging">blogging</a>
+
+          &#8226; Tagged with
+              <a href="../../tag/markdown">markdown</a>
+    </p>
+  </header>
+  <div>
+      <p>Images can be displayed in Markdown.<br>
+Text within the square brackets is the image name. The path to the image goes between the round brackets.<br>
+The {static} tag indicates the image is stored in the content folder. This setting can be changed in pelicanconf.py.</p>
+<p><img alt="python logo" src="../../img/python_icon.png"></p>
+<p>Links to downloadable content such …</p>
+      <br>
+      <a class="btn" href="../../articles/2020/05/18/markdown-examples-part-2/#markdown-examples-part-2">Continue reading</a>
+  </div>
+  <hr />
+</article>
+<article>
+  <header>
+    <h2><a href="../../articles/2020/05/18/markdown-examples-part-3/#markdown-examples-part-3">Markdown Examples Part 3</a></h2>
+    <p>
+      Posted on Mon 18 May 2020 in <a href="../../category/blogging">blogging</a>
+
+          &#8226; Tagged with
+              <a href="../../tag/markdown">markdown</a>,              <a href="../../tag/pygments">pygments</a>
+    </p>
+  </header>
+  <div>
+      <p>Code blocks are preceeded by an indent, three : symbols and the name of the language.<br>
+All of the following code will be highlighted while the text is indented.</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">do_twice</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">wrapper_do_twice</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="k">return</span> <span class="n">wrapper_do_twice</span>
+
+<span class="nd">@do_twice</span>
+<span class="k">def</span> <span class="nf">say_whee</span><span class="p">(</span><span class="n">some_text</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">some_text</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;Whee …</span></pre></div>
+      <br>
+      <a class="btn" href="../../articles/2020/05/18/markdown-examples-part-3/#markdown-examples-part-3">Continue reading</a>
+  </div>
+</article>
+
+  <div class="pagination">
+  </div>
+
+
+
+
+    <footer>
+<p>&copy;  </p>
+<p>Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a></p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Renz's Blog ",
+  "url" : "../..",
+  "image": "https://rjdeleon.netlify.appcontent/img/Picture_of_me.jpg",
+  "description": "Non-sensical projects that wont be published"
+}
+</script>
+
+</body>
+</html>
