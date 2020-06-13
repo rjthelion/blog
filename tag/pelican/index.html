@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Renz's Blog - Pelican</title>
+        <link rel="stylesheet" href="../../theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="../../">Renz's Blog<strong>Clumsy Multitasker</strong></a></h1>
+                <nav><ul>
+                    <li><a href="../../pages/about-me/">About Me</a></li>
+                    <li><a href="../../pages/blogging/">Blogging</a></li>
+                    <li><a href="../../category/blogging">blogging</a></li>
+                    <li><a href="../../category/python">Python</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="../../articles/2020/06/03/installing-pelican/">Installing Pelican</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2020-06-03T00:00:00+08:00">
+                Published: Wed 03 June 2020
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../../author/renz-de-leon.html">Renz De Leon</a>
+        </address>
+<p>In <a href="../../category/blogging">blogging</a>.</p>
+<p>tags: <a href="../../tag/pelican">Pelican</a> </p>
+</footer><!-- /.post-info --><p>Pelican is a static site generator</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">do_twice</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">wrapper_do_twice</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="k">return</span> <span class="n">wrapper_do_twice</span>
+
+<span class="nd">@do_twice</span>
+<span class="k">def</span> <span class="nf">say_whee</span><span class="p">(</span><span class="n">some_text</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">some_text</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;Whee!&#39;</span>
+<span class="n">say_whee</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+
+<p><a href="https://blog.getpelican.com">Pelican</a></p><p>There are <a href="../../articles/2020/06/03/installing-pelican/#disqus_thread">comments</a>.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="../../articles/2010/12/03/my-super-post/" rel="bookmark"
+                           title="Permalink to My super title">My super title</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2010-12-03T10:20:00+08:00">
+                Published: Fri 03 December 2010
+        </abbr>
+		<br />
+        <abbr class="modified" title="2010-12-05T19:30:00+08:00">
+                Updated: Sun 05 December 2010
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../../author/alexis-metaireau.html">Alexis Metaireau</a>
+                        <a class="url fn" href="../../author/conan-doyle.html">Conan Doyle</a>
+        </address>
+<p>In <a href="../../category/python">Python</a>.</p>
+<p>tags: <a href="../../tag/pelican">pelican</a> <a href="../../tag/publishing">publishing</a> </p>
+</footer><!-- /.post-info -->                <p>Short version for index and feeds</p>
+                <a class="readmore" href="../../articles/2010/12/03/my-super-post/">read more</a>
+<p>There are <a href="../../articles/2010/12/03/my-super-post/#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://docs.getpelican.com/en/stable/">pelican</a></li>
+                            <li><a href="https://github.com/getpelican/pelican-themes/tree/master/clean-blog">clean-blog</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="https://www.instagram.com/rensdl">Instagram</a></li>
+                            <li><a href="https://github.com/rjthelion">Github</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'rjdeleon';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+</body>
+</html>
